@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Home - DJ Blog{% endblock %}
+
+{% block content %}
+<h1 class="roboto-flex-custom">midwest/hpks</h1>
+{% for post in posts %}
+<div class="post">
+    <h2><a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
+    <p><em>February 17 2025 </em></p>
+    <p>Today in Louisville, the sky put on a theatrical performance of nature’s moods. Early morning greeted us with a misty veil and a gentle, cool breeze that hinted at the lingering chill of winter, only to give way to a bold burst of sunlight by midday. The temperature crept up into the low 70s°F, a welcome reprieve that made the city feel both vibrant and alive, as if the very air was charged with possibility.
+
+        But just when you thought it was all clear skies and warm promises, a dramatic twist unfolded. Puffy clouds began to amass like dark spectators in the sky, their presence foretelling a potential downpour. The atmosphere grew thick with anticipation, as if the heavens were about to open up and release a torrent of emotions—and water.
+        
+        By late afternoon, a gentle drizzle started to fall, each raindrop adding its own note to a symphony of nature. The rain wasn’t a relentless storm but rather a poetic interlude, refreshing the parched earth and lending a cool contrast to the earlier warmth. Locals, undeterred by the subtle change, strolled the streets with a mix of resignation and quiet joy, embracing the unpredictable rhythm of Louisville’s weather.
+        
+        In true Louisville style, the day ended with an intriguing blend of lingering clouds and a clearing horizon, as if nature itself was hinting at another dramatic turn just around the corner. It was a day that reminded everyone that in this city, every moment is a story waiting to be told—even the weather is a living, breathing character in the urban tale.
+        
+         </p>
+    <img src="{{ url_for('static', filename='images/yard.jpeg') }}" alt="{{ post.title }}" style="max-width:300px;">
+    <audio controls>
+        <source src="{{ url_for('static', filename=post.audio) }}" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<hr>
+{% endfor %}
+{% endblock %}

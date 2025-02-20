@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }} - DJ Blog{% endblock %}
+
+{% block content %}
+<article class="post">
+    <h1 class="roboto-flex-custom">{{ post.title }}</h1>
+    <p><em>February 17 2025</em></p>
+
+    <img src="{{ url_for('static', filename='images/snowy.jpeg') }}" alt="{{ post.title }}">
+
+    <p>
+        The rain in Louisville KY this past weekend was brutal, bringing heavy floods and landslides,
+        then giving us a winter storm colder than many years past. I just want it to be summer already. This winter sucks. Dont 
+        fear as the Spring season is a mere weeks away. Punxatawney Phil can count his days. Its time to actually enjoy the outdoors again
+        get a little natural sweat in. See <more class=""></more>
+    </p>
+    
+    
+</article>
+
+<article class="post">
+    <h1 class="roboto-flex-custom">{{ post.title }}</h1>
+    <p><em>February 20 2025</em></p>
+
+    <img src="{{ url_for('static', filename='images/planewindow.jpeg') }}" alt="{{ post.title }}">
+
+    <p>
+        Seems like airplanes are just falling out of the sky here lately. but whos to blame? Pilots? Donald? Joe? Military?
+        FAA? Fear? Unruly disgruntled passengers? The ridiculous cost of flying? I dont get it but to have 4 major aircraft 
+        crashes in North America within the first 2 months of 2025 is pretty mind blowing. Maybe a little extra so for myself seeing
+        that I work at UPS, at the largest air hub in the world. I just want answers. And to be piad more for working at such a dangerous 
+        facility while operating in record cold temperatures.
+    </p>
+    
+   
+</article>
+{% endblock %}
