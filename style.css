@@ -1,0 +1,134 @@
+/* Import Google Fonts for body and headers */
+
+.roboto-flex-custom {
+  font-family: "Roboto Flex", serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" -9,
+    "wdth" 151,
+    "GRAD" -8,
+    "XOPQ" 75,
+    "XTRA" 25,
+    "YOPQ" 573,
+    "YTAS" 705,
+    "YTDE" -203,
+    "YTFI" -142,
+    "YTLC" 570,
+    "YTUC" 715;
+}
+
+
+
+
+/* Base styles */
+body {
+  margin: 0;
+
+  padding: 0;
+  font-family: 'Roboto Flex', sans-serif;
+  background-color: #090808; /* Light grey background, similar to ChatGPT's vibe */
+  color: #f5ecec;
+  text-align: center; /* Center all content by default */
+}
+
+/* Container to center your content and control max width */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styling with early 2000s Chrome-style for headers */
+header {
+  background-color: #f9e7e7;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #0056b3;
+}
+
+/* Header titles with an early 2000s, chrome-like look */
+h1{
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 64px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #f9e7e7;
+} 
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f9e7e7;
+  margin-top: 0;
+}
+
+/* Main content styling */
+main {
+  padding: 40px 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+}
+
+/* Links styling */
+a {
+  color: #1b6394;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Images and media: center them and make them responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+audio {
+  margin: 20px auto;
+  display: block;
+}
+
+/* Post container styling for your blog posts */
+.post {
+  background: #0c0606;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  text-align: left; /* Posts can have left-aligned text if desired */
+}
+
+.post h2 {
+  text-align: center; /* But center the post headers for that extra pop */
+}
